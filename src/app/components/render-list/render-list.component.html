@@ -1,0 +1,11 @@
+<div class="class">
+  <p>lista de itens</p>
+  <ul>
+    <li *ngFor="let data of listData">
+      <p>{{ data.nome | uppercase }}</p> 
+      <!-- ultilizando pipes -->
+      <p>{{ data.idade | uppercase }}</p>
+      <button (click)="handleRemoveItem(data)" >remove</button>
+    </li>
+  </ul>
+</div>

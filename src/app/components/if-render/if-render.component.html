@@ -1,0 +1,9 @@
+<div class="class">
+    <p *ngIf="testeRender; else testeElse " >if-render works!</p>
+    <ng-template #testeElse>
+        <p>false teste</p>
+    </ng-template>
+    
+</div>
+ <!-- render condicional *ngIf -->
+ <!-- ng-template - componente linkado com o atributo retornado quando a condiçao for falsa -->
